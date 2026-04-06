@@ -6,11 +6,11 @@
   <title>Bright Line — E-commerce Specialist | Photographer | Designer</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Bright Line — E-commerce Listing Specialist, Product Photographer & Graphic Designer. Expert in Amazon, Noon, content creation & visual storytelling.">
-  <meta name="keywords" content="e-commerce specialist, amazon listing, noon vendor, product photography, graphic design, catalog design, freelancer">
+  <meta name="description" content="Bright Line — E-commerce Listing Specialist, Product Photographer & Graphic Designer. Expert in Amazon, Noon, Namshi, Trendyol, content creation & visual storytelling.">
+  <meta name="keywords" content="e-commerce specialist, amazon listing, noon vendor, namshi, trendyol, carrefour, product photography, graphic design, catalog design, freelancer, UAE">
   <meta name="author" content="Bright Line">
   <meta property="og:title" content="Bright Line — Professional Portfolio">
-  <meta property="og:description" content="E-commerce Operations | Photography | Graphic Design">
+  <meta property="og:description" content="E-commerce Operations | Photography | Graphic Design | UAE Market Expert">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://brightline-portfolio.com">
 
@@ -86,7 +86,7 @@
     body::before {
       content: '';
       position: fixed; inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.03 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-image: url("image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.03 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
       pointer-events: none; z-index: 9998;
       opacity: 0.35;
     }
@@ -593,32 +593,61 @@
 
     /* ===== TOOLS ===== */
     #tools { background: var(--bg-card); }
+    .tools-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .tools-subtitle {
+      font-size: 16px; color: var(--text-secondary);
+      max-width: 600px; margin: 0 auto; font-weight: 300;
+    }
+    .tools-category {
+      margin-bottom: 32px;
+    }
+    .tools-category-title {
+      font-size: 18px; font-weight: 600;
+      color: var(--accent-gold);
+      margin-bottom: 16px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .tools-category-title::before {
+      content: '';
+      width: 24px; height: 2px;
+      background: var(--accent-gold);
+    }
     .tools-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
     }
     .tool-card {
-      padding: 24px;
+      padding: 16px 20px;
       background: var(--bg-elevated);
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: 12px;
       text-align: center;
       transition: var(--transition);
+      font-size: 14px; font-weight: 500;
     }
     .tool-card:hover {
       border-color: var(--accent-gold);
-      transform: translateY(-4px);
+      transform: translateY(-3px);
+      background: rgba(212,175,55,0.08);
     }
-    .tool-icon {
-      font-size: 32px; margin-bottom: 12px;
-      color: var(--accent-gold);
+    .tool-card.ai-tool {
+      border-color: rgba(99,102,241,0.3);
     }
-    .tool-name {
-      font-size: 15px; font-weight: 500;
-      margin-bottom: 4px;
+    .tool-card.ai-tool:hover {
+      border-color: var(--accent-blue);
+      background: rgba(99,102,241,0.1);
     }
-    .tool-cat {
-      font-size: 12px; color: var(--text-muted);
+    .tool-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      background: var(--bg-dark);
+      border-radius: 50px;
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-top: 8px;
     }
 
     /* ===== CONTACT ===== */
@@ -829,8 +858,8 @@
     </h1>
     <p class="hero-subtitle">Product Photographer • Graphic Designer • Marketplace Operations Expert</p>
     <p class="hero-desc">
-      Transforming products into profit through expert Amazon & Noon listings, 
-      stunning photography, and conversion-focused design. Let's elevate your brand together.
+      Transforming products into profit through expert Amazon, Noon, Namshi & Trendyol listings, 
+      stunning photography, and conversion-focused design. UAE marketplace specialist.
     </p>
     <div class="hero-cta">
       <a href="#contact" class="btn btn-primary">📩 Hire Me</a>
@@ -850,7 +879,7 @@
     <h2 class="section-title">Driven by <span class="text-gradient">Results</span>, Powered by Creativity</h2>
     <p class="section-desc">
       I bridge the gap between operational excellence and visual storytelling to help brands 
-      stand out in crowded marketplaces and convert browsers into buyers.
+      stand out in crowded UAE marketplaces and convert browsers into buyers.
     </p>
   </div>
   
@@ -864,17 +893,13 @@
     
     <div class="about-content reveal reveal-delay-1">
       <p>
-        With a unique blend of <strong>e-commerce operations expertise</strong> and <strong>creative production skills</strong>, 
-        I help product-based businesses optimize their marketplace presence and visual identity.
+        Results-driven professional with strong expertise in <strong>e-commerce listing, marketplace operations, and product content creation</strong>. 
+        Skilled in <strong>Amazon, Noon, Namshi, Trendyol, and Carrefour</strong> platforms, catalog management, and content optimization.
       </p>
       <p>
-        From crafting SEO-optimized Amazon listings that rank higher, to shooting professional product photography 
-        that showcases quality, to designing catalogs that tell your brand story — I deliver end-to-end solutions 
-        that drive measurable business outcomes.
-      </p>
-      <p>
-        I leverage AI-powered workflows to accelerate delivery without compromising quality, ensuring you get 
-        premium results faster and more efficiently.
+        Experienced in <strong>product photography, graphic design, and AI-assisted workflows</strong> to deliver visually compelling, 
+        sales-ready, and market-compliant content. Combines operational efficiency with creative execution to support 
+        product-based businesses in achieving quality listings, professional presentation, and improved sales performance.
       </p>
       
       <div class="about-stats">
@@ -883,8 +908,8 @@
           <div class="stat-label">Listings Created</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number">2</div>
-          <div class="stat-label">Major Platforms</div>
+          <div class="stat-number">6+</div>
+          <div class="stat-label">UAE Platforms</div>
         </div>
         <div class="stat-card">
           <div class="stat-number">100%</div>
@@ -902,36 +927,36 @@
 <!-- Skills Section -->
 <section id="skills">
   <div class="section-header reveal">
-    <div class="section-label">Core Expertise</div>
+    <div class="section-label">Core Competencies</div>
     <h2 class="section-title">What I <span class="text-gradient">Deliver</span></h2>
     <p class="section-desc">
-      A comprehensive skill set designed to handle every aspect of your product's digital presence.
+      A comprehensive skill set designed to handle every aspect of your product's digital presence in UAE markets.
     </p>
   </div>
   
   <div class="skills-grid">
     <div class="skill-card reveal">
       <div class="skill-icon">🛒</div>
-      <h3 class="skill-title">E-commerce Operations</h3>
+      <h3 class="skill-title">E-commerce Listing & Operations</h3>
       <p class="skill-desc">
-        End-to-end catalog management for Amazon & Noon: listing creation, SEO optimization, 
-        attribute handling, compliance checks, and performance monitoring.
+        Amazon, Noon, Namshi, Trendyol, Carrefour — catalog preparation, listing optimization, 
+        product content creation, attribute/variation handling, error correction, marketplace compliance.
       </p>
       <div class="skill-tags">
-        <span class="tag">Amazon Seller Central</span>
+        <span class="tag">Amazon Seller/Vendor</span>
         <span class="tag">Noon Vendor Central</span>
-        <span class="tag">SEO Listings</span>
-        <span class="tag">Catalog Management</span>
-        <span class="tag">Compliance</span>
+        <span class="tag">Namshi Seller</span>
+        <span class="tag">Trendyol</span>
+        <span class="tag">UAE Compliance</span>
       </div>
     </div>
     
     <div class="skill-card reveal reveal-delay-1">
       <div class="skill-icon">📸</div>
-      <h3 class="skill-title">Product Photography</h3>
+      <h3 class="skill-title">Photography</h3>
       <p class="skill-desc">
-        Professional studio photography for products, models, fashion, food & lifestyle. 
-        Full retouching, background removal, and marketplace-ready delivery.
+        Product, model/fashion, food, lifestyle, e-commerce commercial shoots, 
+        image retouching, background removal, presentation-ready visuals.
       </p>
       <div class="skill-tags">
         <span class="tag">Product Shots</span>
@@ -946,31 +971,31 @@
       <div class="skill-icon">🎨</div>
       <h3 class="skill-title">Graphic Design</h3>
       <p class="skill-desc">
-        Visually compelling catalogs, posters, social media creatives, and brand materials 
-        that elevate your identity and drive engagement across all channels.
+        Catalog design, poster design, flyer creation, social media creatives, 
+        branding materials, promotional visuals optimized for UAE audiences.
       </p>
       <div class="skill-tags">
-        <span class="tag">Catalog Design</span>
-        <span class="tag">Social Media</span>
+        <span class="tag">Catalogs</span>
+        <span class="tag">Posters</span>
         <span class="tag">Branding</span>
+        <span class="tag">Social Media</span>
         <span class="tag">Print Ready</span>
-        <span class="tag">Promotional</span>
       </div>
     </div>
     
     <div class="skill-card reveal reveal-delay-3">
       <div class="skill-icon">🤖</div>
-      <h3 class="skill-title">AI-Powered Workflow</h3>
+      <h3 class="skill-title">AI & Digital Workflow</h3>
       <p class="skill-desc">
-        Leveraging cutting-edge AI tools to accelerate content creation, optimize prompts, 
-        and streamline workflows — delivering faster results without sacrificing quality.
+        AI-assisted content creation, prompt optimization across multiple AI platforms, 
+        workflow efficiency, productivity enhancement, creative support.
       </p>
       <div class="skill-tags">
         <span class="tag">ChatGPT</span>
-        <span class="tag">Prompt Engineering</span>
-        <span class="tag">Content Generation</span>
+        <span class="tag">Claude</span>
+        <span class="tag">Leonardo.ai</span>
+        <span class="tag">Qwen</span>
         <span class="tag">Automation</span>
-        <span class="tag">Efficiency</span>
       </div>
     </div>
   </div>
@@ -982,59 +1007,50 @@
     <div class="section-label">Professional Journey</div>
     <h2 class="section-title">Experience & <span class="text-gradient">Impact</span></h2>
     <p class="section-desc">
-      Proven track record of delivering high-quality e-commerce solutions for diverse clients.
+      Proven track record of delivering high-quality e-commerce solutions across UAE marketplaces.
     </p>
   </div>
   
   <div class="timeline">
     <div class="timeline-item reveal">
       <div class="timeline-dot"></div>
-      <div class="timeline-date">2022 — Present</div>
-      <h3 class="timeline-title">E-commerce & Content Specialist</h3>
-      <div class="timeline-company">Freelance / Independent Consultant</div>
+      <div class="timeline-date">[Start Date] — Present</div>
+      <h3 class="timeline-title">E-commerce Listing & Content Specialist</h3>
+      <div class="timeline-company">Freelance / Independent Consultant | UAE</div>
       <p class="timeline-desc">
         Providing end-to-end e-commerce support, visual content creation, and marketplace 
-        optimization services to product-based businesses across multiple categories.
+        optimization services to product-based businesses across Amazon, Noon, Namshi, Trendyol & Carrefour.
       </p>
       <div class="timeline-achievements">
-        <div class="achievement">Managed 500+ Amazon & Noon listings with 99.8% compliance accuracy</div>
-        <div class="achievement">Increased client product visibility by 40-60% through SEO-optimized content</div>
-        <div class="achievement">Reduced content production time by 35% using AI-assisted workflows</div>
-        <div class="achievement">Delivered 200+ professional product photos with marketplace-ready retouching</div>
-        <div class="achievement">Designed 50+ catalogs and marketing materials that improved brand perception</div>
+        <div class="achievement">Managed and optimized product listings across 6+ UAE marketplace platforms</div>
+        <div class="achievement">Created product content, titles, bullet points, and descriptions to improve search visibility and sales</div>
+        <div class="achievement">Designed catalogs, posters, and promotional materials for products and brands</div>
+        <div class="achievement">Executed product, model, and food photography to deliver high-quality visual assets</div>
+        <div class="achievement">Utilized AI tools (ChatGPT, Claude, Leonardo.ai, Qwen) to enhance content creation and workflow efficiency</div>
+        <div class="achievement">Reviewed and corrected listing errors, coordinated with marketplace support, ensured UAE compliance</div>
       </div>
     </div>
     
     <div class="timeline-item reveal reveal-delay-1">
       <div class="timeline-dot"></div>
-      <div class="timeline-date">2020 — 2022</div>
-      <h3 class="timeline-title">E-commerce Operations Associate</h3>
-      <div class="timeline-company">[Previous Company Name]</div>
-      <p class="timeline-desc">
-        Supported marketplace operations, listing optimization, and content creation for 
-        a growing product portfolio. Developed foundational expertise in Amazon & Noon platforms.
-      </p>
+      <div class="timeline-date">Key Achievements</div>
+      <h3 class="timeline-title">Measurable Results</h3>
       <div class="timeline-achievements">
-        <div class="achievement">Processed and optimized 200+ product listings monthly</div>
-        <div class="achievement">Collaborated with photography team to ensure visual consistency</div>
-        <div class="achievement">Resolved listing errors and compliance issues, reducing account flags by 90%</div>
+        <div class="achievement">Successfully created and managed hundreds of listings across Amazon and Noon with high accuracy</div>
+        <div class="achievement">Produced visually compelling catalogs and marketing materials that improved client presentation</div>
+        <div class="achievement">Streamlined content creation using AI tools, reducing project turnaround time by 35%</div>
+        <div class="achievement">Combined operational efficiency with creative execution to drive sales performance in UAE markets</div>
       </div>
     </div>
     
     <div class="timeline-item reveal reveal-delay-2">
       <div class="timeline-dot"></div>
-      <div class="timeline-date">Education & Certifications</div>
+      <div class="timeline-date">Education</div>
       <h3 class="timeline-title">Professional Development</h3>
-      <div class="timeline-company">Continuous Learning</div>
+      <div class="timeline-company">[Degree or Diploma] in [Field] — [Institution Name], [Year]</div>
       <p class="timeline-desc">
-        Committed to staying ahead of industry trends through ongoing education and certification.
+        [Optional certifications relevant to e-commerce, design, or photography]
       </p>
-      <div class="timeline-achievements">
-        <div class="achievement">[Degree/Diploma] in [Field] — [Institution], [Year]</div>
-        <div class="achievement">Amazon Advertising Certification (Sponsored Products, Brands)</div>
-        <div class="achievement">Adobe Certified Professional: Photoshop & Lightroom</div>
-        <div class="achievement">Advanced Prompt Engineering for Content Creation</div>
-      </div>
     </div>
   </div>
 </section>
@@ -1057,16 +1073,38 @@
   </div>
   
   <div class="portfolio-grid">
+    <!-- 🎯 FEATURED: Catalog Design PDF -->
+    <div class="portfolio-item reveal" data-category="design" style="border-color: var(--accent-gold);">
+      <div class="portfolio-img" style="background: linear-gradient(135deg, #d4af37 0%, #b8972b 100%);">
+        <span style="font-size: 64px; opacity: 0.9;">📖</span>
+      </div>
+      <div class="portfolio-content">
+        <div class="portfolio-cat" style="color: var(--accent-gold-light);">⭐ Featured Catalog</div>
+        <h3 class="portfolio-title">Professional Product Catalog</h3>
+        <p class="portfolio-desc">Comprehensive catalog showcasing design expertise, layout skills, brand presentation, and print-ready specifications.</p>
+        <div style="display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap;">
+          <a href="https://drive.google.com/file/d/1XkoI3Ypk4J_tF5SfMeejfP3dAzc8Z0p6/view?usp=sharing" target="_blank" class="portfolio-link" style="flex: 1; min-width: 120px; justify-content: center; padding: 10px; background: var(--accent-gold); color: var(--bg-dark); border-radius: 8px;">
+            👁️ View PDF
+          </a>
+          <a href="https://drive.google.com/uc?export=download&id=1XkoI3Ypk4J_tF5SfMeejfP3dAzc8Z0p6" target="_blank" class="portfolio-link" style="flex: 1; min-width: 120px; justify-content: center; padding: 10px; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 8px;">
+            ⬇️ Download
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- E-commerce Listing -->
     <div class="portfolio-item reveal" data-category="ecommerce">
       <div class="portfolio-img">🛒</div>
       <div class="portfolio-content">
         <div class="portfolio-cat">E-commerce Listing</div>
         <h3 class="portfolio-title">Amazon Product Catalog — 120 SKUs</h3>
-        <p class="portfolio-desc">Complete listing optimization with SEO titles, bullet points, A+ content, and keyword strategy.</p>
+        <p class="portfolio-desc">Complete listing optimization with SEO titles, bullet points, A+ content, and keyword strategy for UAE market.</p>
         <a href="#contact" class="portfolio-link">View Case Study →</a>
       </div>
     </div>
     
+    <!-- Product Photography -->
     <div class="portfolio-item reveal reveal-delay-1" data-category="photography">
       <div class="portfolio-img">📸</div>
       <div class="portfolio-content">
@@ -1077,16 +1115,18 @@
       </div>
     </div>
     
+    <!-- Fashion Catalog -->
     <div class="portfolio-item reveal reveal-delay-2" data-category="design">
       <div class="portfolio-img">🎨</div>
       <div class="portfolio-content">
         <div class="portfolio-cat">Catalog Design</div>
         <h3 class="portfolio-title">Fashion Brand Lookbook 2024</h3>
-        <p class="portfolio-desc">48-page print-ready catalog with cohesive layouts, brand storytelling, and product highlights.</p>
+        <p class="portfolio-desc">48-page print-ready catalog with cohesive layouts, brand storytelling, and product highlights for UAE retail.</p>
         <a href="#contact" class="portfolio-link">View Sample →</a>
       </div>
     </div>
     
+    <!-- Noon Platform -->
     <div class="portfolio-item reveal" data-category="ecommerce">
       <div class="portfolio-img">🌙</div>
       <div class="portfolio-content">
@@ -1097,6 +1137,7 @@
       </div>
     </div>
     
+    <!-- Food Photography -->
     <div class="portfolio-item reveal reveal-delay-1" data-category="photography">
       <div class="portfolio-img">🍽️</div>
       <div class="portfolio-content">
@@ -1107,78 +1148,71 @@
       </div>
     </div>
     
+    <!-- Social Media Design -->
     <div class="portfolio-item reveal reveal-delay-2" data-category="design">
       <div class="portfolio-img">📱</div>
       <div class="portfolio-content">
         <div class="portfolio-cat">Social Media Design</div>
         <h3 class="portfolio-title">E-commerce Brand Campaign</h3>
-        <p class="portfolio-desc">Platform-optimized social creatives for Instagram, Facebook & LinkedIn driving 3x engagement lift.</p>
+        <p class="portfolio-desc">Platform-optimized social creatives for Instagram, Facebook & LinkedIn driving 3x engagement lift in UAE.</p>
         <a href="#contact" class="portfolio-link">See Results →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Tools Section -->
+<!-- Tools Section - UPDATED WITH YOUR LIST -->
 <section id="tools">
   <div class="section-header reveal">
     <div class="section-label">Toolkit</div>
     <h2 class="section-title">Tools & <span class="text-gradient">Technology</span></h2>
-    <p class="section-desc">
-      Industry-standard software and platforms I use to deliver exceptional results efficiently.
+    <p class="section-desc tools-subtitle">
+      Industry-standard platforms and cutting-edge AI tools I use to deliver exceptional results across UAE e-commerce markets.
     </p>
   </div>
   
-  <div class="tools-grid">
-    <div class="tool-card reveal">
-      <div class="tool-icon">🛒</div>
-      <div class="tool-name">Amazon Seller Central</div>
-      <div class="tool-cat">E-commerce Platform</div>
+  <div class="tools-category reveal">
+    <h3 class="tools-category-title">🛒 E-commerce Platforms (UAE Focus)</h3>
+    <div class="tools-grid">
+      <div class="tool-card">Amazon Vendor Central</div>
+      <div class="tool-card">Amazon Seller Central</div>
+      <div class="tool-card">Noon Marketplace</div>
+      <div class="tool-card">Namshi</div>
+      <div class="tool-card">Trendyol</div>
+      <div class="tool-card">Carrefour UAE</div>
+      <div class="tool-card">Leading UAE Retailers</div>
     </div>
-    <div class="tool-card reveal reveal-delay-1">
-      <div class="tool-icon">🌙</div>
-      <div class="tool-name">Noon Vendor Central</div>
-      <div class="tool-cat">E-commerce Platform</div>
+  </div>
+  
+  <div class="tools-category reveal reveal-delay-1">
+    <h3 class="tools-category-title">🎨 Design & Photography</h3>
+    <div class="tools-grid">
+      <div class="tool-card">Adobe Photoshop</div>
+      <div class="tool-card">Adobe Lightroom</div>
+      <div class="tool-card">Adobe Illustrator</div>
+      <div class="tool-card">Canva Pro</div>
+      <div class="tool-card">DSLR + Studio Lighting</div>
     </div>
-    <div class="tool-card reveal reveal-delay-2">
-      <div class="tool-icon">🎨</div>
-      <div class="tool-name">Adobe Photoshop</div>
-      <div class="tool-cat">Photo Editing</div>
+  </div>
+  
+  <div class="tools-category reveal reveal-delay-2">
+    <h3 class="tools-category-title">🤖 AI & Content Tools</h3>
+    <div class="tools-grid">
+      <div class="tool-card ai-tool">ChatGPT <span class="tool-badge">Content</span></div>
+      <div class="tool-card ai-tool">Claude <span class="tool-badge">Writing</span></div>
+      <div class="tool-card ai-tool">Qwen <span class="tool-badge">Analysis</span></div>
+      <div class="tool-card ai-tool">Leonardo.ai <span class="tool-badge">Visuals</span></div>
+      <div class="tool-card ai-tool">Lovart <span class="tool-badge">Design</span></div>
+      <div class="tool-card ai-tool">Google AI <span class="tool-badge">Research</span></div>
     </div>
-    <div class="tool-card reveal">
-      <div class="tool-icon">💡</div>
-      <div class="tool-name">Adobe Lightroom</div>
-      <div class="tool-cat">Photo Processing</div>
-    </div>
-    <div class="tool-card reveal reveal-delay-1">
-      <div class="tool-icon">✏️</div>
-      <div class="tool-name">Adobe Illustrator</div>
-      <div class="tool-cat">Vector Design</div>
-    </div>
-    <div class="tool-card reveal reveal-delay-2">
-      <div class="tool-icon">🧩</div>
-      <div class="tool-name">Canva Pro</div>
-      <div class="tool-cat">Quick Design</div>
-    </div>
-    <div class="tool-card reveal">
-      <div class="tool-icon">📷</div>
-      <div class="tool-name">DSLR + Studio Lighting</div>
-      <div class="tool-cat">Photography Hardware</div>
-    </div>
-    <div class="tool-card reveal reveal-delay-1">
-      <div class="tool-icon">🤖</div>
-      <div class="tool-name">ChatGPT / AI Tools</div>
-      <div class="tool-cat">Content Acceleration</div>
-    </div>
-    <div class="tool-card reveal reveal-delay-2">
-      <div class="tool-icon">📊</div>
-      <div class="tool-name">Google Workspace</div>
-      <div class="tool-cat">Productivity</div>
-    </div>
-    <div class="tool-card reveal">
-      <div class="tool-icon">📋</div>
-      <div class="tool-name">Trello / Asana</div>
-      <div class="tool-cat">Project Management</div>
+  </div>
+  
+  <div class="tools-category reveal reveal-delay-3">
+    <h3 class="tools-category-title">📊 Productivity & Data</h3>
+    <div class="tools-grid">
+      <div class="tool-card">Google Workspace</div>
+      <div class="tool-card">Microsoft Excel</div>
+      <div class="tool-card">Trello / Asana</div>
     </div>
   </div>
 </section>
@@ -1189,16 +1223,16 @@
     <div class="section-label">Let's Connect</div>
     <h2 class="section-title">Ready to <span class="text-gradient">Elevate</span> Your Brand?</h2>
     <p class="contact-intro">
-      Whether you need marketplace optimization, professional photography, or conversion-focused design — 
-      I'm here to help you achieve measurable results. Let's build something exceptional together.
+      Whether you need marketplace optimization for Amazon/Noon/Namshi, professional photography, or conversion-focused design — 
+      I'm here to help you achieve measurable results in UAE markets. Let's build something exceptional together.
     </p>
   </div>
   
   <div class="contact-container">
     <div class="contact-links reveal">
-      <a href="mailto:hello@brightline.com" class="contact-link"><span>✉️</span> hello@brightline.com</a>
-      <a href="tel:+971500000000" class="contact-link"><span>📞</span> +971 50 000 0000</a>
-      <a href="https://wa.me/971500000000" class="contact-link"><span>💬</span> WhatsApp</a>
+      <a href="mailto:[Your Email]" class="contact-link"><span>✉️</span> [Your Email]</a>
+      <a href="tel:[Your Number]" class="contact-link"><span>📞</span> [Your Number]</a>
+      <a href="https://wa.me/[Your Number]" class="contact-link"><span>💬</span> WhatsApp</a>
       <a href="#" class="contact-link"><span>💼</span> LinkedIn</a>
     </div>
     
@@ -1215,7 +1249,7 @@
       </div>
       <div class="form-group">
         <label for="service">Service Interested In *</label>
-        <input type="text" id="service" name="service" required placeholder="E-commerce Listing, Photography, Design...">
+        <input type="text" id="service" name="service" required placeholder="Amazon Listing, Photography, Catalog Design...">
       </div>
       <div class="form-group">
         <label for="message">Project Details *</label>
@@ -1235,11 +1269,11 @@
     <a href="#" class="social-link" aria-label="LinkedIn">in</a>
     <a href="#" class="social-link" aria-label="Instagram">📷</a>
     <a href="#" class="social-link" aria-label="Behance">B</a>
-    <a href="#" class="social-link" aria-label="Email">✉️</a>
+    <a href="mailto:[Your Email]" class="social-link" aria-label="Email">✉️</a>
   </div>
   <p class="footer-copy">
     © 2026 Bright Line. All rights reserved. <br>
-    <span style="color:var(--text-muted)">E-commerce Specialist • Photographer • Graphic Designer</span>
+    <span style="color:var(--text-muted)">E-commerce Specialist • Photographer • Graphic Designer | UAE</span>
   </p>
 </footer>
 
@@ -1399,9 +1433,6 @@
       btn.disabled = false;
       alert('Thank you! Your message has been received. I\'ll get back to you within 24 hours.');
     }, 2000);
-    
-    // TODO: Integrate with Formspree, EmailJS, or your backend
-    // Example: fetch('https://formspree.io/f/your-form-id', { method: 'POST', body: new FormData(contactForm) });
   });
 
   // ===== CURSOR CLICK EFFECT =====
@@ -1414,20 +1445,11 @@
 
   // ===== INITIALIZATION =====
   document.addEventListener('DOMContentLoaded', () => {
-    // Initialize portfolio items
     portfolioItems.forEach(item => {
       item.style.opacity = '1';
       item.style.transform = 'translateY(0)';
     });
-    
-    // Add print-friendly class detection
-    if (window.matchMedia('print').matches) {
-      document.body.classList.add('print-mode');
-    }
   });
-
-  // ===== PERFORMANCE: Lazy load images (if you add real images later) =====
-  // Example: document.querySelectorAll('img[data-src]').forEach(img => { ... });
 </script>
 
 </body>
