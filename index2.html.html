@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billi A+ Content Case Study | Sadhik Sageer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0a0a0c;
+      --bg-card: #131318;
+      --bg-elevated: #1a1a22;
+      --text-primary: #f8f8fb;
+      --text-secondary: #a9a9c0;
+      --text-muted: #6b6b85;
+      --accent-gold: #d4af37;
+      --accent-gold-light: #e6c973;
+      --accent-teal: #14b8a6;
+      --border: rgba(212, 175, 55, 0.15);
+      --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 24px 5%;
+      background: rgba(10, 10, 12, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+
+    .nav-logo span {
+      color: var(--accent-gold);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-gold);
+    }
+
+    /* Hero Section */
+    .case-hero {
+      padding: 160px 5% 80px;
+      background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-dark) 100%);
+    }
+
+    .case-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--accent-gold);
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent-gold);
+      margin-bottom: 24px;
+    }
+
+    .case-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 5vw, 56px);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .case-subtitle {
+      font-size: 20px;
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+      font-weight: 300;
+    }
+
+    .case-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .meta-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .meta-value {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    /* Content Sections */
+    .case-section {
+      padding: 80px 5%;
+    }
+
+    .case-section:nth-child(even) {
+      background: var(--bg-card);
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
+    .section-content {
+      max-width: 800px;
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+
+    /* A+ Content Showcase */
+    .aplus-showcase {
+      display: grid;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .aplus-module {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .aplus-module:hover {
+      border-color: var(--accent-gold);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(212, 175, 55, 0.1);
+    }
+
+    .aplus-header {
+      padding: 24px;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .aplus-module-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .aplus-module-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .aplus-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .aplus-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Modules Grid */
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .module-card {
+      padding: 24px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      transition: var(--transition);
+    }
+
+    .module-card:hover {
+      border-color: var(--accent-gold);
+      transform: translateY(-2px);
+    }
+
+    .module-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .module-name {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .module-description {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* Results Section */
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .result-card {
+      text-align: center;
+      padding: 32px 24px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      transition: var(--transition);
+    }
+
+    .result-card:hover {
+      border-color: var(--accent-gold);
+      transform: translateY(-4px);
+    }
+
+    .result-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-bottom: 8px;
+    }
+
+    .result-label {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    /* CTA Section */
+    .cta-section {
+      text-align: center;
+      padding: 100px 5%;
+      background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-dark) 100%);
+    }
+
+    .cta-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+
+    .cta-text {
+      font-size: 18px;
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 12px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--accent-gold);
+      color: var(--bg-dark);
+      border: 1px solid var(--accent-gold);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text-primary);
+      border: 1px solid var(--border);
+      margin-left: 16px;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--bg-card);
+      padding: 40px 5%;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .footer-copy {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .case-meta {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .btn-outline {
+        margin-left: 0;
+        margin-top: 12px;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-content">
+      <a href="index.html" class="nav-logo">Sadhik<span>Sageer</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="case-hero">
+    <div class="case-container">
+      <div class="case-badge">
+        <span>✨</span>
+        <span>Amazon A+ Content</span>
+      </div>
+      <h1 class="case-title">Billi Acaia Wood Footed Sushi Board</h1>
+      <p class="case-subtitle">Premium Amazon A+ Content Design for Luxury Kitchen & Dining Brand</p>
+      
+      <div class="case-meta">
+        <div class="meta-item">
+          <span class="meta-label">Client</span>
+          <span class="meta-value">Billi Design</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Platform</span>
+          <span class="meta-value">Amazon.ae</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Project Type</span>
+          <span class="meta-value">A+ Content Design</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Year</span>
+          <span class="meta-value">2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Overview -->
+  <section class="case-section">
+    <div class="case-container">
+      <h2 class="section-title">Project Overview</h2>
+      <div class="section-content">
+        <p>Created comprehensive Amazon A+ Content for Billi Design's premium Acaia Wood Footed Sushi Board, showcasing the product's craftsmanship, versatility, and premium quality through strategic visual storytelling and module optimization.</p>
+        <p style="margin-top: 16px;">The project focused on elevating the product presentation beyond basic product photography, creating an immersive brand experience that highlights the sushi board's unique features, sustainable materials, and multiple use cases.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- A+ Content Modules -->
+  <section class="case-section">
+    <div class="case-container">
+      <h2 class="section-title">A+ Content Modules</h2>
+      <p class="section-content" style="margin-bottom: 40px;">Strategic module selection and design to maximize conversion and brand storytelling</p>
+      
+      <div class="modules-grid">
+        <div class="module-card">
+          <div class="module-icon">🎨</div>
+          <div class="module-name">Standard Image Header</div>
+          <div class="module-description">Hero module with product showcase and key value proposition</div>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">📸</div>
+          <div class="module-name">Image & Text Overlay</div>
+          <div class="module-description">Highlighting natural beauty and superior craftsmanship</div>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">🍱</div>
+          <div class="module-name">Multiple Product Images</div>
+          <div class="module-description">Showcasing versatility across different food presentations</div>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">📐</div>
+          <div class="module-name">Standard Single Image</div>
+          <div class="module-description">Elevated design features and dimensional specifications</div>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">🌿</div>
+          <div class="module-name">Comparison Chart</div>
+          <div class="module-description">Sustainable materials and craftsmanship details</div>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">✨</div>
+          <div class="module-name">Brand Logo Module</div>
+          <div class="module-description">Brand identity and key product features summary</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Showcase -->
+  <section class="case-section">
+    <div class="case-container">
+      <h2 class="section-title">Visual Showcase</h2>
+      <p class="section-content" style="margin-bottom: 40px;">Complete A+ Content implementation across Amazon product detail page</p>
+      
+      <div class="aplus-showcase">
+        <div class="aplus-module">
+          <div class="aplus-header">
+            <div class="aplus-module-title">Module 1: Hero Section</div>
+            <div class="aplus-module-desc">Premium product introduction with key selling points</div>
+          </div>
+          <div class="aplus-image">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/2946b398-3f2a-4616-b54e-ee8b8a8f75d8.__CR0,0,970,600_PT0_SX970_V1___.png" alt="Billi Sushi Board - Hero Section">
+          </div>
+        </div>
+
+        <div class="aplus-module">
+          <div class="aplus-header">
+            <div class="aplus-module-title">Module 2: Versatility Showcase</div>
+            <div class="aplus-module-desc">Multiple use cases and serving applications</div>
+          </div>
+          <div class="aplus-image">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/8c41f192-0709-4955-b0ed-c99335ff0014.__CR0,0,970,600_PT0_SX970_V1___.jpg" alt="Billi Sushi Board - Versatility">
+          </div>
+        </div>
+
+        <div class="aplus-module">
+          <div class="aplus-header">
+            <div class="aplus-module-title">Module 3: Elevated Design</div>
+            <div class="aplus-module-desc">Premium features and design specifications</div>
+          </div>
+          <div class="aplus-image">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/474bb387-bd85-445a-9f52-be9dc32f207b.__CR0,0,970,600_PT0_SX970_V1___.jpg" alt="Billi Sushi Board - Design Features">
+          </div>
+        </div>
+
+        <div class="aplus-module">
+          <div class="aplus-header">
+            <div class="aplus-module-title">Module 4: Craftsmanship</div>
+            <div class="aplus-module-desc">Sustainable materials and quality craftsmanship</div>
+          </div>
+          <div class="aplus-image">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/13d05307-f2de-461c-9e11-03f5edfc64ea.__CR0,0,970,600_PT0_SX970_V1___.jpg" alt="Billi Sushi Board - Craftsmanship">
+          </div>
+        </div>
+
+        <div class="aplus-module">
+          <div class="aplus-header">
+            <div class="aplus-module-title">Module 5: Brand Identity</div>
+            <div class="aplus-module-desc">Brand positioning and key features summary</div>
+          </div>
+          <div class="aplus-image">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/542da0cd-1d93-4173-bceb-b89d2030b91a.__CR0,0,970,600_PT0_SX970_V1___.jpg" alt="Billi Sushi Board - Brand">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="case-section">
+    <div class="case-container">
+      <h2 class="section-title">Key Features Highlighted</h2>
+      <div class="section-content">
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px;">
+            <span style="color: var(--accent-gold);">✓</span>
+            <span><strong>Premium Acaia Wood:</strong> Sustainable, durable material with natural beauty</span>
+          </li>
+          <li style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px;">
+            <span style="color: var(--accent-gold);">✓</span>
+            <span><strong>Elevated Footed Design:</strong> 10cm raised stand for enhanced presentation</span>
+          </li>
+          <li style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px;">
+            <span style="color: var(--accent-gold);">✓</span>
+            <span><strong>Multi-Purpose Use:</strong> Sushi, appetizers, desserts, cheese, and charcuterie</span>
+          </li>
+          <li style="padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px;">
+            <span style="color: var(--accent-gold);">✓</span>
+            <span><strong>Handcrafted Quality:</strong> Each piece unique with natural wood grain</span>
+          </li>
+          <li style="padding: 12px 0; display: flex; align-items: center; gap: 12px;">
+            <span style="color: var(--accent-gold);">✓</span>
+            <span><strong>Perfect Dimensions:</strong> 35x12x10cm - ideal for entertaining and daily use</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="case-section">
+    <div class="case-container">
+      <h2 class="section-title">Project Results</h2>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-number">100%</div>
+          <div class="result-label">Amazon Compliance</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">6+</div>
+          <div class="result-label">A+ Modules Created</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">5</div>
+          <div class="result-label">Visual Storytelling Sections</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">✓</div>
+          <div class="result-label">Brand Guidelines Met</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="case-container">
+      <h2 class="cta-title">Ready to Elevate Your Amazon Presence?</h2>
+      <p class="cta-text">Let's create compelling A+ Content that converts browsers into buyers and showcases your brand's unique value proposition.</p>
+      <div class="hero-cta">
+        <a href="index.html#contact" class="btn btn-primary">📩 Start Your Project</a>
+        <a href="index.html#portfolio" class="btn btn-outline">👁️ View More Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-copy">© 2026 Sadhik Sageer. All rights reserved. | E-commerce Specialist • A+ Content Designer • Photographer</p>
+  </footer>
+
+</body>
+</html>
