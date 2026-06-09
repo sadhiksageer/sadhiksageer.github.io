@@ -158,7 +158,8 @@
     .section-title { font-size: clamp(28px, 4vw, 42px); margin-bottom: 12px; }
     .section-desc { font-size: 16px; color: var(--text-secondary); font-weight: 300; }
     #about { background: var(--bg-card); }
-    .about-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 50px; align-items: start; }
+    .about-grid { display: block; max-width: 800px; margin: 0 auto; }
+    .about-grid .about-content { width: 100%; }
     .about-content p { font-size: 16px; color: var(--text-secondary); margin-bottom: 16px; font-weight: 300; line-height: 1.7; }
     .about-content strong { color: var(--text-primary); font-weight: 500; }
     .about-intent {
